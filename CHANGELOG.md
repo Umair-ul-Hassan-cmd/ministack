@@ -7,11 +7,26 @@ Versioning follows [Semantic Versioning](https://semver.org/).
 
 ---
 
+## [1.1.40] — 2026-04-06
+
+### Added
+- **State persistence for ALL services** — 11 remaining services now support `PERSIST_STATE=1`: ALB, Glue, EFS, WAF, Athena, EMR, CloudFront, ACM, Firehose, SES, SES v2. All 35+ services now persist state across restarts.
+- **Step Functions persistence** — state machines, executions, tags, and activities persist. RUNNING executions restored as FAILED with `States.ServiceRestart`. Contributed by @TheJokersThief (#141)
+- **IAM `ListEntitiesForPolicy`** — returns users, roles, and groups attached to a managed policy. Supports `EntityFilter` and `PathPrefix`. Contributed by @TheJokersThief (#143)
+
+### Tests
+- 5 cross-service integration tests: S3→SQS events, SNS→SQS fanout, DynamoDB streams→Lambda, SQS ESM→Lambda, CloudFormation full stack (S3+Lambda+DynamoDB). Contributed by @DaviReisVieira (#142)
+
+---
+
 ## [1.1.39] — 2026-04-06
 
 ### Fixed
 - **AppSync persistence crash on restart** — `restore_state()` called before it was defined in the file, causing `NameError` when `PERSIST_STATE=1` and restarting. Reported by @samiuoi (#66)
 - **Cognito `AdminSetUserPassword` with `Permanent=false`** — now correctly sets `UserStatus` to `FORCE_CHANGE_PASSWORD`. Previously the password was updated but the status wasn't changed.
+
+### Community
+- **README: Community Integrations section** — [StackPort](https://github.com/DaviReisVieira/stackport) visual dashboard by @DaviReisVieira, [Aspire Hosting](https://github.com/McDoit/aspire-hosting-ministack) .NET integration by @McDoit
 
 ### Tests
 - 10 new tests: KMS (list policies, rotation period), ElastiCache (parameter groups, snapshots, tags), Lambda (Image CRUD, update ImageUri, provided runtime), SecretsManager (rotate secret), Firehose (S3 destination writes)
